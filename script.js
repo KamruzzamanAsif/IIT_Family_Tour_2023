@@ -20,3 +20,13 @@ const songs = [
     resultDiv.innerHTML = `The song you got is: "${randomSong}"`;
   });
   
+
+  // wheel spin code //
+const wheel = document.getElementById("wheel");
+
+spinButton.addEventListener("click", function () {
+  // Random number between 0 and 360
+  const randomDegree = Math.floor(Math.random() * 360);
+  // Rotate the wheel
+  wheel.style.transform = `rotate(${randomDegree}deg)`;
+});
